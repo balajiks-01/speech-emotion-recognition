@@ -1,0 +1,1077 @@
+{
+  "eda": {
+    "summary_stats": {
+      "groups": [
+        {
+          "feature_group": "MFCC (40 coefficients)",
+          "dimension": 40,
+          "mean": -14.702,
+          "median": -0.9145,
+          "std": 99.092,
+          "min": -873.2423,
+          "max": 115.1258,
+          "description": "Short-term spectral envelope / timbre of speech"
+        },
+        {
+          "feature_group": "Chroma STFT (12 bins)",
+          "dimension": 12,
+          "mean": 0.5061,
+          "median": 0.5084,
+          "std": 0.101,
+          "min": 0.135,
+          "max": 0.8462,
+          "description": "Pitch-class energy distribution (harmonic content)"
+        },
+        {
+          "feature_group": "Mel Spectrogram (128 bins)",
+          "dimension": 128,
+          "mean": 0.0998,
+          "median": 0.0007,
+          "std": 1.0454,
+          "min": 0.0,
+          "max": 123.6343,
+          "description": "Frequency-domain energy on human auditory mel scale"
+        },
+        {
+          "feature_group": "Aggregated 180-dim Vector",
+          "dimension": 180,
+          "mean": -3.1624,
+          "median": 0.0007,
+          "std": 47.1263,
+          "min": -873.2423,
+          "max": 123.6343,
+          "description": "Concatenated raw unscaled acoustic representation"
+        }
+      ]
+    },
+    "class_balance": {
+      "labels": [
+        "calm",
+        "disgust",
+        "fearful",
+        "happy"
+      ],
+      "counts": [
+        192,
+        192,
+        192,
+        192
+      ],
+      "total_samples": 768,
+      "is_balanced": true
+    },
+    "mfcc_distributions": {
+      "MFCC_1": {
+        "calm": {
+          "mean": -716.501,
+          "std": 59.368,
+          "min": -873.242,
+          "max": -557.114,
+          "hist_counts": [
+            3,
+            4,
+            9,
+            15,
+            32,
+            39,
+            35,
+            32,
+            8,
+            3,
+            4,
+            8
+          ],
+          "bin_centers": [
+            -860.07,
+            -833.73,
+            -807.38,
+            -781.04,
+            -754.69,
+            -728.35,
+            -702.01,
+            -675.66,
+            -649.32,
+            -622.97,
+            -596.63,
+            -570.29
+          ]
+        },
+        "disgust": {
+          "mean": -623.931,
+          "std": 68.361,
+          "min": -788.923,
+          "max": -452.166,
+          "hist_counts": [
+            5,
+            10,
+            9,
+            21,
+            18,
+            34,
+            34,
+            28,
+            14,
+            10,
+            6,
+            3
+          ],
+          "bin_centers": [
+            -774.89,
+            -746.83,
+            -718.77,
+            -690.7,
+            -662.64,
+            -634.58,
+            -606.51,
+            -578.45,
+            -550.39,
+            -522.32,
+            -494.26,
+            -466.2
+          ]
+        },
+        "fearful": {
+          "mean": -560.958,
+          "std": 100.906,
+          "min": -830.155,
+          "max": -355.478,
+          "hist_counts": [
+            5,
+            1,
+            7,
+            18,
+            15,
+            29,
+            24,
+            23,
+            26,
+            25,
+            12,
+            7
+          ],
+          "bin_centers": [
+            -810.38,
+            -770.82,
+            -731.26,
+            -691.71,
+            -652.15,
+            -612.59,
+            -573.04,
+            -533.48,
+            -493.93,
+            -454.37,
+            -414.81,
+            -375.26
+          ]
+        },
+        "happy": {
+          "mean": -583.105,
+          "std": 80.234,
+          "min": -744.049,
+          "max": -377.428,
+          "hist_counts": [
+            4,
+            20,
+            22,
+            26,
+            20,
+            23,
+            22,
+            23,
+            18,
+            6,
+            4,
+            4
+          ],
+          "bin_centers": [
+            -728.77,
+            -698.22,
+            -667.67,
+            -637.12,
+            -606.57,
+            -576.01,
+            -545.46,
+            -514.91,
+            -484.36,
+            -453.81,
+            -423.26,
+            -392.7
+          ]
+        }
+      },
+      "MFCC_2": {
+        "calm": {
+          "mean": 76.275,
+          "std": 13.26,
+          "min": 37.922,
+          "max": 115.126,
+          "hist_counts": [
+            1,
+            8,
+            5,
+            18,
+            29,
+            31,
+            36,
+            35,
+            16,
+            10,
+            1,
+            2
+          ],
+          "bin_centers": [
+            41.14,
+            47.57,
+            54.01,
+            60.44,
+            66.87,
+            73.31,
+            79.74,
+            86.17,
+            92.61,
+            99.04,
+            105.48,
+            111.91
+          ]
+        },
+        "disgust": {
+          "mean": 67.929,
+          "std": 14.016,
+          "min": 31.038,
+          "max": 107.347,
+          "hist_counts": [
+            2,
+            7,
+            9,
+            21,
+            28,
+            40,
+            33,
+            22,
+            16,
+            6,
+            4,
+            4
+          ],
+          "bin_centers": [
+            34.22,
+            40.58,
+            46.94,
+            53.29,
+            59.65,
+            66.01,
+            72.37,
+            78.73,
+            85.09,
+            91.45,
+            97.81,
+            104.17
+          ]
+        },
+        "fearful": {
+          "mean": 58.235,
+          "std": 14.395,
+          "min": 26.594,
+          "max": 94.698,
+          "hist_counts": [
+            5,
+            11,
+            19,
+            26,
+            20,
+            18,
+            28,
+            33,
+            16,
+            11,
+            2,
+            3
+          ],
+          "bin_centers": [
+            29.43,
+            35.11,
+            40.78,
+            46.46,
+            52.13,
+            57.81,
+            63.48,
+            69.16,
+            74.83,
+            80.51,
+            86.19,
+            91.86
+          ]
+        },
+        "happy": {
+          "mean": 65.845,
+          "std": 15.001,
+          "min": 29.963,
+          "max": 110.981,
+          "hist_counts": [
+            5,
+            10,
+            13,
+            26,
+            30,
+            31,
+            33,
+            21,
+            13,
+            7,
+            2,
+            1
+          ],
+          "bin_centers": [
+            33.34,
+            40.09,
+            46.84,
+            53.59,
+            60.34,
+            67.1,
+            73.85,
+            80.6,
+            87.35,
+            94.1,
+            100.85,
+            107.61
+          ]
+        }
+      },
+      "MFCC_3": {
+        "calm": {
+          "mean": 4.181,
+          "std": 7.889,
+          "min": -13.513,
+          "max": 21.559,
+          "hist_counts": [
+            5,
+            7,
+            18,
+            16,
+            24,
+            24,
+            23,
+            27,
+            16,
+            17,
+            11,
+            4
+          ],
+          "bin_centers": [
+            -12.05,
+            -9.13,
+            -6.21,
+            -3.28,
+            -0.36,
+            2.56,
+            5.48,
+            8.41,
+            11.33,
+            14.25,
+            17.17,
+            20.1
+          ]
+        },
+        "disgust": {
+          "mean": -2.358,
+          "std": 8.888,
+          "min": -24.825,
+          "max": 18.126,
+          "hist_counts": [
+            4,
+            7,
+            7,
+            22,
+            24,
+            18,
+            27,
+            32,
+            27,
+            11,
+            9,
+            4
+          ],
+          "bin_centers": [
+            -23.04,
+            -19.46,
+            -15.88,
+            -12.3,
+            -8.72,
+            -5.14,
+            -1.56,
+            2.02,
+            5.6,
+            9.18,
+            12.76,
+            16.34
+          ]
+        },
+        "fearful": {
+          "mean": -11.773,
+          "std": 12.507,
+          "min": -51.958,
+          "max": 13.798,
+          "hist_counts": [
+            4,
+            1,
+            1,
+            5,
+            20,
+            23,
+            22,
+            39,
+            28,
+            22,
+            21,
+            6
+          ],
+          "bin_centers": [
+            -49.22,
+            -43.74,
+            -38.26,
+            -32.78,
+            -27.3,
+            -21.82,
+            -16.34,
+            -10.86,
+            -5.38,
+            0.1,
+            5.58,
+            11.06
+          ]
+        },
+        "happy": {
+          "mean": -10.27,
+          "std": 11.584,
+          "min": -47.016,
+          "max": 14.427,
+          "hist_counts": [
+            4,
+            3,
+            3,
+            8,
+            13,
+            16,
+            37,
+            35,
+            35,
+            25,
+            7,
+            6
+          ],
+          "bin_centers": [
+            -44.46,
+            -39.34,
+            -34.22,
+            -29.09,
+            -23.97,
+            -18.85,
+            -13.73,
+            -8.61,
+            -3.49,
+            1.63,
+            6.75,
+            11.87
+          ]
+        }
+      },
+      "MFCC_4": {
+        "calm": {
+          "mean": 17.236,
+          "std": 7.25,
+          "min": 2.288,
+          "max": 36.563,
+          "hist_counts": [
+            3,
+            7,
+            19,
+            39,
+            50,
+            18,
+            8,
+            16,
+            11,
+            7,
+            11,
+            3
+          ],
+          "bin_centers": [
+            3.72,
+            6.57,
+            9.43,
+            12.29,
+            15.14,
+            18.0,
+            20.85,
+            23.71,
+            26.57,
+            29.42,
+            32.28,
+            35.14
+          ]
+        },
+        "disgust": {
+          "mean": 11.573,
+          "std": 6.989,
+          "min": -3.351,
+          "max": 29.855,
+          "hist_counts": [
+            10,
+            6,
+            18,
+            24,
+            25,
+            37,
+            23,
+            14,
+            20,
+            7,
+            5,
+            3
+          ],
+          "bin_centers": [
+            -1.97,
+            0.8,
+            3.57,
+            6.33,
+            9.1,
+            11.87,
+            14.64,
+            17.4,
+            20.17,
+            22.94,
+            25.7,
+            28.47
+          ]
+        },
+        "fearful": {
+          "mean": 7.026,
+          "std": 8.344,
+          "min": -17.509,
+          "max": 27.666,
+          "hist_counts": [
+            4,
+            1,
+            2,
+            22,
+            19,
+            27,
+            40,
+            27,
+            26,
+            14,
+            5,
+            5
+          ],
+          "bin_centers": [
+            -15.63,
+            -11.86,
+            -8.1,
+            -4.33,
+            -0.57,
+            3.2,
+            6.96,
+            10.73,
+            14.49,
+            18.25,
+            22.02,
+            25.78
+          ]
+        },
+        "happy": {
+          "mean": 6.042,
+          "std": 7.696,
+          "min": -16.59,
+          "max": 27.692,
+          "hist_counts": [
+            4,
+            2,
+            9,
+            15,
+            16,
+            42,
+            42,
+            31,
+            16,
+            7,
+            6,
+            2
+          ],
+          "bin_centers": [
+            -14.74,
+            -11.05,
+            -7.36,
+            -3.67,
+            0.02,
+            3.71,
+            7.4,
+            11.09,
+            14.78,
+            18.47,
+            22.16,
+            25.85
+          ]
+        }
+      }
+    },
+    "correlation": {
+      "labels": [
+        "MFCC 1",
+        "MFCC 2",
+        "MFCC 3",
+        "MFCC 4",
+        "MFCC 5",
+        "MFCC 7",
+        "MFCC 9",
+        "MFCC 13",
+        "Chroma 1",
+        "Chroma 3",
+        "Chroma 5",
+        "Chroma 7",
+        "Mel 1",
+        "Mel 13",
+        "Mel 45",
+        "Mel 77"
+      ],
+      "matrix": [
+        [
+          1.0,
+          -0.46,
+          -0.705,
+          -0.647,
+          -0.524,
+          -0.503,
+          -0.319,
+          -0.232,
+          -0.312,
+          -0.318,
+          -0.296,
+          -0.372,
+          0.194,
+          0.283,
+          0.359,
+          0.449
+        ],
+        [
+          -0.46,
+          1.0,
+          0.564,
+          0.534,
+          0.683,
+          0.538,
+          0.347,
+          0.417,
+          0.301,
+          0.374,
+          0.411,
+          0.436,
+          -0.11,
+          -0.141,
+          -0.278,
+          -0.34
+        ],
+        [
+          -0.705,
+          0.564,
+          1.0,
+          0.838,
+          0.663,
+          0.762,
+          0.552,
+          0.482,
+          0.448,
+          0.581,
+          0.613,
+          0.621,
+          -0.035,
+          -0.189,
+          -0.373,
+          -0.412
+        ],
+        [
+          -0.647,
+          0.534,
+          0.838,
+          1.0,
+          0.607,
+          0.759,
+          0.49,
+          0.493,
+          0.398,
+          0.545,
+          0.588,
+          0.571,
+          -0.021,
+          -0.197,
+          -0.356,
+          -0.294
+        ],
+        [
+          -0.524,
+          0.683,
+          0.663,
+          0.607,
+          1.0,
+          0.609,
+          0.655,
+          0.401,
+          0.472,
+          0.511,
+          0.553,
+          0.611,
+          0.025,
+          -0.097,
+          -0.305,
+          -0.333
+        ],
+        [
+          -0.503,
+          0.538,
+          0.762,
+          0.759,
+          0.609,
+          1.0,
+          0.602,
+          0.66,
+          0.477,
+          0.65,
+          0.695,
+          0.663,
+          0.072,
+          -0.17,
+          -0.263,
+          -0.265
+        ],
+        [
+          -0.319,
+          0.347,
+          0.552,
+          0.49,
+          0.655,
+          0.602,
+          1.0,
+          0.52,
+          0.5,
+          0.623,
+          0.676,
+          0.656,
+          0.139,
+          -0.059,
+          -0.103,
+          -0.204
+        ],
+        [
+          -0.232,
+          0.417,
+          0.482,
+          0.493,
+          0.401,
+          0.66,
+          0.52,
+          1.0,
+          0.29,
+          0.52,
+          0.593,
+          0.598,
+          0.071,
+          -0.141,
+          -0.032,
+          -0.147
+        ],
+        [
+          -0.312,
+          0.301,
+          0.448,
+          0.398,
+          0.472,
+          0.477,
+          0.5,
+          0.29,
+          1.0,
+          0.77,
+          0.605,
+          0.452,
+          0.023,
+          -0.158,
+          -0.139,
+          -0.199
+        ],
+        [
+          -0.318,
+          0.374,
+          0.581,
+          0.545,
+          0.511,
+          0.65,
+          0.623,
+          0.52,
+          0.77,
+          1.0,
+          0.836,
+          0.634,
+          0.098,
+          -0.13,
+          -0.214,
+          -0.203
+        ],
+        [
+          -0.296,
+          0.411,
+          0.613,
+          0.588,
+          0.553,
+          0.695,
+          0.676,
+          0.593,
+          0.605,
+          0.836,
+          1.0,
+          0.806,
+          0.133,
+          -0.095,
+          -0.197,
+          -0.218
+        ],
+        [
+          -0.372,
+          0.436,
+          0.621,
+          0.571,
+          0.611,
+          0.663,
+          0.656,
+          0.598,
+          0.452,
+          0.634,
+          0.806,
+          1.0,
+          0.117,
+          -0.043,
+          -0.125,
+          -0.232
+        ],
+        [
+          0.194,
+          -0.11,
+          -0.035,
+          -0.021,
+          0.025,
+          0.072,
+          0.139,
+          0.071,
+          0.023,
+          0.098,
+          0.133,
+          0.117,
+          1.0,
+          0.138,
+          0.032,
+          0.032
+        ],
+        [
+          0.283,
+          -0.141,
+          -0.189,
+          -0.197,
+          -0.097,
+          -0.17,
+          -0.059,
+          -0.141,
+          -0.158,
+          -0.13,
+          -0.095,
+          -0.043,
+          0.138,
+          1.0,
+          0.121,
+          0.106
+        ],
+        [
+          0.359,
+          -0.278,
+          -0.373,
+          -0.356,
+          -0.305,
+          -0.263,
+          -0.103,
+          -0.032,
+          -0.139,
+          -0.214,
+          -0.197,
+          -0.125,
+          0.032,
+          0.121,
+          1.0,
+          0.245
+        ],
+        [
+          0.449,
+          -0.34,
+          -0.412,
+          -0.294,
+          -0.333,
+          -0.265,
+          -0.204,
+          -0.147,
+          -0.199,
+          -0.203,
+          -0.218,
+          -0.232,
+          0.032,
+          0.106,
+          0.245,
+          1.0
+        ]
+      ]
+    },
+    "observations": [
+      "The 4 target classes are balanced with exactly 192 samples per class (192 each), confirming accuracy is an unskewed evaluation metric.",
+      "Feature scale disparity is pronounced: MFCC values range from -873.2 to 115.1, while Mel spectrogram averages 0.0998 with max 123.63. In Phase 1, no scaling is applied as a documented baseline limitation.",
+      "MFCC coefficients 1-4 demonstrate measurable shift in central tendency across emotions, whereas higher dimensions show overlapping envelopes.",
+      "Adjacent MFCC and Mel-frequency bands exhibit moderate to high positive correlation (r > 0.65), indicating spectral redundancy."
+    ]
+  },
+  "results": {
+    "model_config": {
+      "model_type": "Multi-Layer Perceptron Classifier (MLPClassifier)",
+      "hidden_layer_sizes": [
+        300
+      ],
+      "activation": "relu",
+      "solver": "adam",
+      "learning_rate": "adaptive",
+      "alpha": 0.0001,
+      "batch_size": "auto",
+      "iterations_completed": 91,
+      "loss_curve_final": 0.562,
+      "random_state": 9,
+      "feature_scaling": "None (Raw unscaled features)",
+      "outlier_removal": "None"
+    },
+    "metrics_table": {
+      "Accuracy": {
+        "train": 0.7847,
+        "test": 0.6615
+      },
+      "Precision (macro-avg)": {
+        "train": 0.8092,
+        "test": 0.6792
+      },
+      "Recall (macro-avg)": {
+        "train": 0.7831,
+        "test": 0.6644
+      },
+      "F1-Score (macro-avg)": {
+        "train": 0.7814,
+        "test": 0.6579
+      },
+      "AUC-ROC (one-vs-rest)": {
+        "train": 0.9618,
+        "test": 0.8864
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "calm",
+        "disgust",
+        "fearful",
+        "happy"
+      ],
+      "matrix_counts": [
+        [
+          42,
+          6,
+          6,
+          3
+        ],
+        [
+          6,
+          29,
+          10,
+          3
+        ],
+        [
+          3,
+          2,
+          28,
+          4
+        ],
+        [
+          5,
+          1,
+          16,
+          28
+        ]
+      ],
+      "matrix_normalized": [
+        [
+          0.737,
+          0.105,
+          0.105,
+          0.053
+        ],
+        [
+          0.125,
+          0.604,
+          0.208,
+          0.062
+        ],
+        [
+          0.081,
+          0.054,
+          0.757,
+          0.108
+        ],
+        [
+          0.1,
+          0.02,
+          0.32,
+          0.56
+        ]
+      ]
+    },
+    "per_class_metrics": {
+      "calm": {
+        "precision": 0.75,
+        "recall": 0.7368,
+        "f1_score": 0.7434,
+        "support": 57
+      },
+      "disgust": {
+        "precision": 0.7632,
+        "recall": 0.6042,
+        "f1_score": 0.6744,
+        "support": 48
+      },
+      "fearful": {
+        "precision": 0.4667,
+        "recall": 0.7568,
+        "f1_score": 0.5773,
+        "support": 37
+      },
+      "happy": {
+        "precision": 0.7368,
+        "recall": 0.56,
+        "f1_score": 0.6364,
+        "support": 50
+      }
+    },
+    "fearful_recall_highlight": {
+      "recall": 0.7568,
+      "recall_pct": 75.7,
+      "sdg_implication": "In telehealth and remote crisis counselling (SDG 3, Target 3.4), failing to detect emotional distress (fear/panic) is the costliest clinical error."
+    },
+    "interpretation": {
+      "train_acc_pct": 78.47,
+      "test_acc_pct": 66.15,
+      "overfitting_gap_pct": 12.33,
+      "gap_status": "moderate overfitting",
+      "top_confusion_pair": "happy -> fearful (16 errors)",
+      "fear_disgust_confusion_errors": 12,
+      "happy_fear_confusion_errors": 20,
+      "hypothesis_test_acc_above_random": true,
+      "hypothesis_confusion_supported": false,
+      "narrative": "The baseline MLP achieved a training accuracy of 78.47% versus a test accuracy of 66.15%. This 12.33-point gap indicates moderate overfitting, which is characteristic of training an unscaled 180-dimensional feature space without dropout or weight regularisation. The test accuracy (66.15%) substantially exceeds the 25% random-guess baseline, confirming the primary hypothesis. The confusion matrix reveals that the top misclassification occurred between 'happy' and 'fearful' (16 instances). Furthermore, mutual confusion between acoustically tense pairs (fearful vs disgust: 12 errors) was compared with distinct pairs (happy vs fearful: 20 errors), partially moderating the acoustic similarity hypothesis. In the context of SDG 3 / Target 3.4 (mental health triage), 'fearful' recall stands at 75.7%; reducing missed distress false negatives remains the critical objective for Phase 2 normalisation."
+    }
+  }
+}

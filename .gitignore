@@ -1,0 +1,28 @@
+# Data files (too large for GitHub)
+data/
+*.wav
+
+# Model binaries
+models/*.joblib
+models/*.pkl
+models/*.h5
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Environment
+.env
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
